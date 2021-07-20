@@ -67,6 +67,7 @@ nav{
     padding:1.25rem 0;
     z-index:999;
     transition:all 0.3s ease;
+     
 }
 nav .navbar .logo a{
      color:var(--white-color);
@@ -746,7 +747,7 @@ footer .mini-footer p a{
 @media (max-width:900px) {
     /* ====header design==== */
     nav .navbar{
-        width:90%;
+        width:100%;
     }
     nav .navbar .menu{
         position:fixed;
@@ -783,8 +784,17 @@ footer .mini-footer p a{
         cursor:pointer;
     }
     /* ====top banner design ====*/
-    .home .top-banner .text p{
-        width:70%;
+     .top-banner {
+        width:100%;
+    }
+    header .item .cover .header-content h1{
+      font-size: 40px;
+    }
+    header .item .cover .header-content .line{
+      border: 0;
+    }
+    header .item .cover .header-content h4{
+      margin-right: 30px;
     }
 
     /*======services====== */
@@ -804,12 +814,7 @@ footer .mini-footer p a{
         background:transparent;
     }
 
-    /* ===== latest-post======= */ 
-    .post-content .post-card{
-        width:calc(100% / 2 - 1.25rem);
-        margin-bottom:1.5rem;
-    }
-
+    
     /* ===== Footer design===== */
     .footer-wiget .footer-content{
         width:calc(100% / 2 - 1.25rem);
@@ -822,16 +827,7 @@ footer .mini-footer p a{
 
 @media (max-width:750px) { 
 
-    /* ==== top banner design ====*/
-    .home .top-banner .content{
-        width:90%;
-    }
-    .home .top-banner .text h1{
-        font-size: 2rem;
-    }
-    .home .top-banner .text p{
-        width:90%;
-    }
+    
 
     /*====== services ====== */
      .sec-content .left{
@@ -848,19 +844,7 @@ footer .mini-footer p a{
      .sec-content .right .card{
          width:100%;
      }
-    /* ==== agency content =====*/
-     .agency-content{
-         flex-direction: column;
-         text-align: center;
-     }
-     .agency-content .agency-img{
-         width:100%;
-         margin-bottom:1.875rem;
-     }
-     .agency-content .agency-right{
-         width:100%;
-         text-align: left;
-     }
+    
     /* ===== Award winning ====== */ 
     .award .counter-item{
         flex-direction: column;
@@ -870,14 +854,7 @@ footer .mini-footer p a{
         width:100%;
     }
 
-    /* ===== latest-post ======= */
-    .latest-post .post-content{
-        flex-direction: column;
-    }
-    .post-content .post-card{
-        width:100%;
-        margin-bottom:1.875rem;
-    }
+     
 
     /* ===== Footer design===== */
      .footer-design .footer-wiget{
@@ -892,8 +869,8 @@ footer .mini-footer p a{
 
 @media (max-width:350px) {
     /* ====top banner design ====*/ 
-    .home .top-banner .text h1{
-        font-size: 1.5rem;
+    .header-content h1{
+        font-size: 10px;
     }
 }
         
