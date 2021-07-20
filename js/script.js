@@ -15,7 +15,7 @@ menuBtn.onclick = function (){
 }
 
 cancelBtn.onclick = function (){
-  navBar.classList.remove("active");
+  navBar.menu.remove("active");
   menuBtn.style.opacity ="1";
   menuBtn.style.pointerEvents = "auto";
   body.style.overflow = "auto";
@@ -74,12 +74,31 @@ if (number == 0 && $(window).scrollTop() > oTop) {
   });
 }
 
-
-
 }
 
+$('.owl-carousel').owlCarousel({
   
-   
+  loop:true,
+  margin:10,
+  dots:true,
+  nav:true,
+  mouseDrag:false,
+  autoplay:true,
+  autoplayspeed:1000,
+  animateOut: 'slideOutUp',
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:1
+      },
+      1000:{
+          items:1
+      }
+  }
+});
+
 
 // silk slider testmonial
 
@@ -93,4 +112,3 @@ $('.testimonials').slick({
   silde:'li',
   arrows:false,
 });
-
